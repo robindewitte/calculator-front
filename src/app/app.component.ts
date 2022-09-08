@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MathQuestionDTO } from './helper/dto/mathQuestionDTO';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,13 @@ export class AppComponent implements OnInit {
   model: any = {};
 
   ngOnInit(): void {
+
+  }
+
+  PostQuestion(){
+    let mathQuestionDTO = new MathQuestionDTO();
+    mathQuestionDTO.setQuestion(this.model.calculation);
+    
 
   }
 }

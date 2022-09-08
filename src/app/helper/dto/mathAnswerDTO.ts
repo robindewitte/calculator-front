@@ -1,10 +1,11 @@
-export class MathQuestionDTO{
+export class MathAnswerDTO{
     //region fields
     private question!: String;
+    private answer!: String;
     //endregion
  
     //region constructors
-    public MathQuestionDTO(){
+    public MathAnswerDTO(){
  
     }
     //endregion
@@ -14,9 +15,10 @@ export class MathQuestionDTO{
         return this.question;
     }
 
-    public setQuestion(entry: String){
-        this.question = entry;
+    public getAnswer(){
+        return this.answer;
     }
+    //setters not needed in current context
  
     //endregion
  

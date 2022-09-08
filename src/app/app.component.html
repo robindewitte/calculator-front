@@ -1,7 +1,7 @@
 <h1>Calculator</h1>
 
 <h3>Send your question</h3>
-<form class="card center" autocomplete="off" name="form" (ngSubmit)="f.form.valid && SendCase()" #f="ngForm" novalidate>
+<form class="card center" autocomplete="off" name="form" (ngSubmit)="f.form.valid && PostQuestion()" #f="ngForm" novalidate>
   <label for="calculation">MathQuestion</label>
   <input type="text" id="topicTitle" name="topicTitle" [(ngModel)]="model.calculation" />
   <button id="submit" class="btn">Calculate</button>
