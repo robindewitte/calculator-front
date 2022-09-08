@@ -28,12 +28,12 @@ export class MathServiceService {
   }
 
   public PostQuestion(mathQuestionDTO: MathQuestionDTO) {
-    return (this.http.post<any>(this.restData.getUrl('api/postQuestion'), mathQuestionDTO,
+    return (this.http.post<any>(this.restData.getUrl('mathapi/postQuestion'), mathQuestionDTO,
     )).pipe(catchError(this.handleError));
   }
 
   public GetAllQuestionAnswers(){
-    return (this.http.get<any>(this.restData.getUrl('api/getQuestionAnswers'))).pipe(catchError(this.handleError));
+    return (this.http.get<any>(this.restData.getUrl('mathapi/getQuestionAnswers'))).pipe(catchError(this.handleError));
   }
   
 }
