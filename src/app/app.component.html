@@ -3,12 +3,13 @@
 <h3>Send your question</h3>
 <form class="card center" autocomplete="off" name="form" (ngSubmit)="f.form.valid && PostQuestion()" #f="ngForm" novalidate>
   <label for="calculation">MathQuestion</label>
-  <input type="text" id="topicTitle" name="topicTitle" [(ngModel)]="model.calculation" />
+  <input type="text" id="question" name="question" [(ngModel)]="model.question" />
   <button id="submit" class="btn">Calculate</button>
   <p class="error">{{ErrorMessage}}</p>
 </form>
-
+<!--
 <h3>Results</h3>
 <table mat-table [dataSource]="myDataArray">
   ...
 </table>
+-->

@@ -1,11 +1,11 @@
-export class MathAnswerDTO{
+export class QuestionAnswersDTO{
     //region fields
     private question!: String;
     private answer!: String;
     //endregion
  
     //region constructors
-    public MathAnswerDTO(){
+    public QuestionAnswersDTO(){
  
     }
     //endregion
